@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loss Adjustment Calculator</title>
 </head>
 <body>
-    <h1>Loss Adjustment Calculator</h1>
-    <h2>Use this tool to save you time on creating a loss adjustment note for your file!</h2>
-    <form>
-    <label for="fname">Old Replacement Cost Value:</label>
-    <input type="text" id="oldRCV" name="oldRCV" value=""><br>
+    <div id='header'>
+        <h1>Loss Adjustment Calculator</h1>
+        <h2>Use this tool to save you time on creating a loss adjustment note for your file!</h2>
+    </div>
 
-    <label for="fname">New Replacement Cost Value:</label>
-    <input type="text" id="oldRCV" name="oldRCV" value=""><br>
+    <div class="calculator">
+        <form>
+            <label class='entry'>Old Replacement Cost Value:</label>
+            <input class='box' type="text" value=""><br>
 
-    <label for="fname">Recoverable Depreciation:</label>
-    <input type="text" id="oldRCV" name="oldRCV" value=""><br>
+            <label class='entry'>New Replacement Cost Value:</label>
+            <input class='box' type="text" value=""><br>
 
-    <label for="fname">Non-Recoverable Depreciation:</label>
-    <input type="text" id="oldRCV" name="oldRCV" value=""><br>
+            <label class='entry'>Recoverable Depreciation:</label>
+            <input class='box' type="text" value=""><br>
 
-    <label for="fname">Deductible:</label>
-    <input type="text" id="oldRCV" name="oldRCV" value=""><br>
+            <label class='entry'>Non-Recoverable Depreciation:</label>
+            <input class='box' type="text" value=""><br>
 
-    <label for="fname">Prior Payments:</label>
-    <input type="text" id="oldRCV" name="oldRCV" value=""><br>
+            <label class='entry'>Deductible:</label>
+            <input class='box' type="text" value=""><br>
 
-    <button type="button">Submit!</button>
-    </form>
+            <label class='entry'>Prior Payments:</label>
+            <input class='box' type="text" value=""><br>
+
+            <button type="button">Submit!</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>

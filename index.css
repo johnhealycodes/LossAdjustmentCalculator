@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#header {
+    background-color: lightcyan;
+    color: darkslategray;
+    min-width: 100px;
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+
+
+}
+
+.calculator {
+    background-color: darkslategray;
+    color:lightcyan;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: center;
+}
+.entry{
+    display: inline-block;
+    float: center;
+    clear: center;
+    width: 250px;
+    padding:0%
+}
+.box {
+    display: inline-block;
+    float: center;
+    clear: left;
+    width: 250px;
+    padding:0%
+}
