@@ -8,40 +8,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loss Adjustment Calculator</title>
+    <title>Supplement Loss Adjustment Calculator</title>
 </head>
 <body>
     <div id='header'>
-        <h1>Loss Adjustment Calculator</h1>
+        <h1>Supplement Loss Adjustment Calculator</h1>
         <h2>Use this tool to save you time on creating a loss adjustment note for your file!</h2>
     </div>
 
     <div class="calculator">
-        <form>
+        <form onsubmit="htmlLossAdjustment()">
             <label class='entry'>Old Replacement Cost Value:</label>
-            <input class='box' type="text" value=""><br>
+            <input id="oldRCV" class='box' type="number" value=1000><br>
 
             <label class='entry'>New Replacement Cost Value:</label>
-            <input class='box' type="text" value=""><br>
+            <input id="newRCV" class='box' type="number" value=5000><br>
 
             <label class='entry'>Recoverable Depreciation:</label>
-            <input class='box' type="text" value=""><br>
+            <input id="depreciation" class='box' type="number" value=100><br>
 
             <label class='entry'>Non-Recoverable Depreciation:</label>
-            <input class='box' type="text" value=""><br>
+            <input id="nDepreciation" class='box' type="number" value=0><br>
 
             <label class='entry'>Deductible:</label>
-            <input class='box' type="text" value=""><br>
+            <input id="deductible" class='box' type="number" value=100><br>
 
             <label class='entry'>Prior Payments:</label>
-            <input class='box' type="text" value=""><br>
+            <input id="payments" class='box' type="number" value=800><br>
 
-            <button type="button">Submit!</button>
+            <button type="submit">Submit!</button>
+
+        </div>
+        <div id="results">
+                <h3 id='header'>Loss Adjustment Will Appear Here!</h3>
+                <div id='header' id="lossAdjustment"></div>
+            </div>
         </form>
-    </div>
-    <div id="results">
-        <p>Loss Adjustment Here!</p>
-    </div>
     <script src="index.js"></script>
 </body>
 </html>
