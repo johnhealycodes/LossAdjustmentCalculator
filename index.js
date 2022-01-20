@@ -43,4 +43,7 @@ function htmlLossAdjustment() {
     <ul>Total Loss Less Deductible ${reserve}</ul>`
 };
 
+htmlLossAdjustment
+
 document.getElementById("lossAdjustment").innerHTML
+
