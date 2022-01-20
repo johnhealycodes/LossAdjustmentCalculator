@@ -60,11 +60,11 @@ function htmlLossAdjustment() {
     <ul>Old Replacement Cost Value $${oldRCV}</ul>
     <ul>Supplement Amount $${supplement}</ul>
     <ul>New Replacement Cost Value $${newRCV}</ul>
-    <ul>Less Recoverable Depreciation $${depreciation}</ul>
-    <ul>Less Non-Recoverable Depreciation $${nDepreciation}</ul>
+    <ul>Less Recoverable Depreciation ($${depreciation})</ul>
+    <ul>Less Non-Recoverable Depreciation ($${nDepreciation})</ul>
     <ul>Supplement Actual Cash Value $${ACV}</ul>
-    <ul>Less Deductible $${deductible}</ul>
-    <ul>Less Prior Payments $${priorPayment}</ul>
+    <ul>Less Deductible ($${deductible})</ul>
+    <ul>Less Prior Payments ($${priorPayment})</ul>
     <ul>Net Supplement Payment Amount $${netPayment}
     <ul>Total Loss Less Deductible $${reserve}</ul>`
 };
