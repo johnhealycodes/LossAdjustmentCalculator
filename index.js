@@ -11,20 +11,19 @@ const netPayment = ACV - deductible - priorPayment
 const reserve = newRCV - deductible
 
 //Order of operations
-console.log(oldRCV);
-console.log(supplement);
-console.log(newRCV);
-console.log(depreciation);
-console.log(nDepreciation);
-console.log(ACV);
-console.log(deductible);
-console.log(priorPayment);
-console.log(netPayment);
-console.log(reserve);
+// console.log(oldRCV);
+// console.log(supplement);
+// console.log(newRCV);
+// console.log(depreciation);
+// console.log(nDepreciation);
+// console.log(ACV);
+// console.log(deductible);
+// console.log(priorPayment);
+// console.log(netPayment);
+// console.log(reserve);
     
 
     
-
 
 
 
@@ -42,6 +41,6 @@ function htmlLossAdjustment() {
     <ul>Less Prior Payments ${priorPayment}</ul>
     <ul>Net Supplement Payment Amount ${netPayment}
     <ul>Total Loss Less Deductible ${reserve}</ul>`
-}
-    
+};
+
 document.getElementById("lossAdjustment").innerHTML
