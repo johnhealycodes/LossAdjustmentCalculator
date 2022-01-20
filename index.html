@@ -17,31 +17,32 @@
     </div>
 
     <div class="calculator">
-        <form onsubmit="htmlLossAdjustment()">
+        <form onsubmit="return false">
             <label class='entry'>Old Replacement Cost Value:</label>
-            <input id="oldRCV" class='box' type="number" ><br>
+            <input id="oldRCV" class='box' type="number" step="0.01"><br>
 
             <label class='entry'>New Replacement Cost Value:</label>
-            <input id="newRCV" class='box' type="number" ><br>
+            <input id="newRCV" class='box' type="number" step="0.01"><br>
 
             <label class='entry'>Recoverable Depreciation:</label>
-            <input id="depreciation" class='box' type="number" ><br>
+            <input id="depreciation" class='box' type="number" step="0.01"><br>
 
             <label class='entry'>Non-Recoverable Depreciation:</label>
-            <input id="nDepreciation" class='box' type="number" ><br>
+            <input id="nDepreciation" class='box' type="number" step="0.01"><br>
 
             <label class='entry'>Deductible:</label>
-            <input id="deductible" class='box' type="number" ><br>
+            <input id="deductible" class='box' type="number" step="0.01"><br>
 
             <label class='entry'>Prior Payments:</label>
-            <input id="payments" class='box' type="number" ><br>
+            <input id="payments" class='box' type="number" step="0.01"><br>
 
-            <button type="submit">Submit!</button>
+            <button type="submit" onclick="submitFunction()">Submit!</button>
 
         </div>
-        <div>
-                <h3 id='header'>Loss Adjustment Will Appear Here!</h3>
-                <div class='header' id="results"><p id="lossAdjustment"></p></div>
+        <div id="results">
+                <div class='header'>
+                    <p id="lossAdjustment"></p>
+                </div>
             </div>
         </form>
     <script src="index.js"></script>
