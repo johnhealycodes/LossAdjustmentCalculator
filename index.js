@@ -7,10 +7,10 @@
 
  let showBottom = false;
 
-let supplement = (newRCV - oldRCV).toFixed(2);
-let ACV = newRCV - (depreciation - nDepreciation).toFixed(2);
-let netPayment = (ACV - deductible - priorPayment).toFixed(2);
-let reserve = (newRCV - deductible).toFixed(2);
+let supplement = (newRCV - oldRCV).toPrecision(2);
+let ACV = newRCV - (depreciation - nDepreciation).toPrecision(2);
+let netPayment = (ACV - deductible - priorPayment).toPrecision(2);
+let reserve = (newRCV - deductible).toPrecision(2);
 
 //Order of operations
 // console.log(oldRCV);
@@ -65,7 +65,7 @@ function htmlLossAdjustment() {
     <ul>Supplement Actual Cash Value $${ACV}</ul>
     <ul>Less Deductible ($${deductible})</ul>
     <ul>Less Prior Payments ($${priorPayment})</ul>
-    <ul>Net Supplement Payment Amount $${netPayment}
+    <ul>Net Supplement Payment Amount $${netPayment}</ul>
     <ul>Total Loss Less Deductible $${reserve}</ul>`
 };
 

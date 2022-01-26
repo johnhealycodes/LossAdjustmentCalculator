@@ -1,77 +1,111 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: lightgray;
     font-family: 'Oxygen', sans-serif;
 }
 
-#header {
-    background-color: lightcyan;
-    color: darkslategray;
-    min-width: 100px;
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    border: 3px solid white;
+#navBar {
+    background-color:red;
+    color: black;
+    font-weight: bold;
     text-align: center;
+    min-height: 50px;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a:hover {
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#header {
+    background-color: lightgray;
+    color: black;
+    min-width: 100px;
+    margin-top: 0px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
 
     
 }
 
 .calculator {
-    background-color: darkslategray;
-    color:lightcyan;
-    margin: auto;
-    width: 50%;
+    background-color: lightgray;
+    color:black;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 10px;
+    width: 100%;
     padding: 10px;
     text-align: center;
-    border: 3px solid white;
 
 }
 .entry{
     display: inline-block;
     clear: center;
-    margin: auto;
-    width: 50%;
+    margin-top: -8px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    width: 40%;
     padding: 10px;
 }
 .box {
     display: inline-block;
     clear: left;
-    width: 150px;
-    padding:0%
+    width: 25%;
+    padding:0%;
+    text-align: center;
 }
 
 
 
 .copy {
-    background-color: darkslategray;
-    color:lightcyan;
-    margin: auto;
+    background-color: lightgray;
+    color:black;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 10px;
     width: 50%;
     padding: 10px;
     text-align: center;
-    border: 3px solid white;
 }
 
 .header {
-        background-color: lightcyan;
-        color: darkslategray;
+        background-color: lightgray;
+        color: black;
         min-width: 100px;
-        margin: auto;
+        margin-right: auto;
+        margin-left: auto;
         width: 50%;
         padding: 10px;
-        border: 3px solid white;
-        text-align: center;
 }
 
 .lossAdjustment {
-    background-color: lightcyan;
-    color: darkslategray;
+    background-color: lightgray;
+    color: black;
     min-width: 100px;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
     width: 50%;
     padding: 10px;
-    border: 3px solid white;
-    text-align: center;
 
 }
