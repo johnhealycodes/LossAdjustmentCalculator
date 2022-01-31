@@ -7,10 +7,10 @@
 
  let showBottom = false;
 
-let supplement = (newRCV - oldRCV).toPrecision(2);
-let ACV = newRCV - (depreciation - nDepreciation).toPrecision(2);
-let netPayment = (ACV - deductible - priorPayment).toPrecision(2);
-let reserve = (newRCV - deductible).toPrecision(2);
+let supplement = ((newRCV - oldRCV).toPrecision(2));
+let ACV = (newRCV - (depreciation - nDepreciation).toPrecision(2));
+let netPayment = ((ACV - deductible - priorPayment).toPrecision(2));
+let reserve = ((newRCV - deductible).toPrecision(2));
 
 //Order of operations
 // console.log(oldRCV);
