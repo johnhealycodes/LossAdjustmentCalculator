@@ -1,9 +1,7 @@
-let oldRCV = document.getElementById("oldRCV").value;
-let newRCV = document.getElementById("newRCV").value;
+let oldRCV = document.getElementById("RCV").value;
 let depreciation = document.getElementById("depreciation").value;
 let nDepreciation = document.getElementById("nDepreciation").value;
 let deductible = document.getElementById("deductible").value;
-let priorPayment = document.getElementById("payments").value;
 
 let showBottom = false;
 
@@ -20,18 +18,14 @@ let showBottom = false;
 // console.log(netTotal);
 
 function submitFunction() {
-  oldRCV = document.getElementById("oldRCV").value;
-  newRCV = document.getElementById("newRCV").value;
+  RCV = document.getElementById("RCV").value;
   depreciation = document.getElementById("depreciation").value;
   nDepreciation = document.getElementById("nDepreciation").value;
   deductible = document.getElementById("deductible").value;
-  priorPayment = document.getElementById("payments").value;
 
-  supplement = (newRCV - oldRCV).toFixed(2);
-  ACV = (newRCV - depreciation - nDepreciation).toFixed(2);
-  netPayment = (ACV - deductible - priorPayment).toFixed(2);
-  netTotal = (newRCV - deductible).toFixed(2);
-  reserve = Math.ceil(netTotal);
+  ACV = (RCV - depreciation - nDepreciation).toFixed(2);
+  netPayment = (ACV - deductible).toFixed(2);
+  reserve = Math.ceil(netPayment);
 
   showBottom = true;
   document.getElementById("lossAdjustment").style.display = "";
@@ -43,15 +37,11 @@ function submitFunction() {
 
 function htmlLossAdjustment() {
   return `<h1>Supplement Loss Adjustment</h1>
-    <ul>Old Replacement Cost Value $${oldRCV}</ul>
-    <ul>Supplement Amount $${supplement}</ul>
-    <ul>New Replacement Cost Value $${newRCV}</ul>
+    <ul>Replacement Cost Value $${RCV}</ul>
     <ul>Less Recoverable Depreciation (${depreciation})</ul>
     <ul>Less Non-Recoverable Depreciation <${nDepreciation}></ul>
-    <ul>Supplement Actual Cash Value $${ACV}</ul>
+    <ul>Actual Cash Value $${ACV}</ul>
     <ul>Less Deductible (${deductible})</ul>
-    <ul>Less Prior Payments (${priorPayment})</ul>
-    <ul>Net Supplement Payment Amount $${netPayment}</ul>
-    <ul>Total Loss Less Deductible $${netTotal}</ul>
+    <ul>Net Payment Amount $${netPayment}</ul>
     <ul>Setting Loss Reserves at $${reserve}</ul>`;
 }

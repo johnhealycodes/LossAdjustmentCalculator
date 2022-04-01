@@ -98,16 +98,25 @@ a:hover {
 .header {
     background-color: lightgray;
     color:black;
-    margin:auto;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 10px;
     width: 100%;
     padding: 10px;
+    text-align: center;
 
 }
 
 #lossAdjustment {
     background-color: lightgray;
     color:black;
-    text-align: left;
-    margin: auto;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
 
 }
