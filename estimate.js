@@ -37,7 +37,7 @@ function submitFunction() {
 
 function htmlLossAdjustment() {
   return `<div class="lead mx-auto" style="max-width: 100%">
-    <h1 class="lead">Supplement Loss Adjustment</h1>
+    <h1 class="lead">Estimate Loss Adjustment</h1>
     <ul>Replacement Cost Value $${RCV}</ul>
     <ul>Less Recoverable Depreciation (${depreciation})</ul>
     <ul>Less Non-Recoverable Depreciation <${nDepreciation}></ul>
