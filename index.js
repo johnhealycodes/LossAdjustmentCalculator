@@ -42,7 +42,8 @@ function submitFunction() {
 //Loss Adjustment Note to Copy and Paste:
 
 function htmlLossAdjustment() {
-  return `<h1>Supplement Loss Adjustment</h1>
+  return `<div class="lead mx-auto" style="max-width: 100%">
+    <h1 class="lead">Supplement Loss Adjustment</h1>
     <ul>Old Replacement Cost Value $${oldRCV}</ul>
     <ul>Supplement Amount $${supplement}</ul>
     <ul>New Replacement Cost Value $${newRCV}</ul>
@@ -53,5 +54,6 @@ function htmlLossAdjustment() {
     <ul>Less Prior Payments (${priorPayment})</ul>
     <ul>Net Supplement Payment Amount $${netPayment}</ul>
     <ul>Total Loss Less Deductible $${netTotal}</ul>
-    <ul>Setting Loss Reserves at $${reserve}</ul>`;
+    <ul>Setting Loss Reserves at $${reserve}</ul>
+    </div>`;
 }

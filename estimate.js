@@ -36,12 +36,14 @@ function submitFunction() {
 //Loss Adjustment Note to Copy and Paste:
 
 function htmlLossAdjustment() {
-  return `<h1>Supplement Loss Adjustment</h1>
+  return `<div class="lead mx-auto" style="max-width: 100%">
+    <h1 class="lead">Supplement Loss Adjustment</h1>
     <ul>Replacement Cost Value $${RCV}</ul>
     <ul>Less Recoverable Depreciation (${depreciation})</ul>
     <ul>Less Non-Recoverable Depreciation <${nDepreciation}></ul>
     <ul>Actual Cash Value $${ACV}</ul>
     <ul>Less Deductible (${deductible})</ul>
     <ul>Net Payment Amount $${netPayment}</ul>
-    <ul>Setting Loss Reserves at $${reserve}</ul>`;
+    <ul>Setting Loss Reserves at $${reserve}</ul>
+    </div>`;
 }

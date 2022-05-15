@@ -23,30 +23,44 @@
         <h1 class="display-4">Estimate Loss Adjustment Calculator</h1>
     </div>  
 
-    <div>        
+    <div
+    class="d-flex justify-content-center container-fluid" 
+    id="tableMargins"
+    >        
+
         <form onsubmit="return false">
-                <div class="mx-auto" style="max-width: 100%">        
-            <input class="inputGroup-sizing-lg" id="RCV" placeholder="Replacement Cost Value" type="number" step="0.01"><br>
+                <div class="mx-auto inputGroup-sizing-lg" style="max-width: 100%">        
+            <input class="mb-2" id="RCV" placeholder="Replacement Cost Value" type="number" step="0.01"><br>
 
-            <input id="depreciation" placeholder="Recoverable Depreciation" type="number" step="0.01"><br>
+            <input class="mb-2" id="depreciation" placeholder="Recoverable Depreciation" type="number" step="0.01"><br>
 
-            <input id="nDepreciation" placeholder="Non-Recoverable Depreciation" type="number" step="0.01"><br>
+            <input class="mb-2" id="nDepreciation" placeholder="Non-Recoverable Depreciation" type="number" step="0.01"><br>
 
-            <input id="deductible" placeholder="Deductible" type="number" step="0.01"><br>
+            <input class="mb-2" id="deductible" placeholder="Deductible" type="number" step="0.01"><br>
 
-            <button class="btn btn-primary" type="submit" onclick="submitFunction()">Submit!</button>
+            <div class="d-flex justify-content-center container-fluid" id="submitSpacing">
+                <button class="btn btn-primary" type="submit" onclick="submitFunction()">Submit!</button>
+            </div>
+
             </div>
     </div>
 
+    <div id="resultsSpacing">
         <div id="results">
-                <div>
                     <div id="lossAdjustment"></div>
+                    </div>
                 </div>
             </div>
         </form>
-    <div class="fixed-bottom">
-            <p>Want to reach out to the creator of this site? You can visit their <a class="link" href="https://github.com/johnhealycodes" target=”_blank”>GitHub</a></p>
-        </div>
+    <div class="mx-auto, text-center" style="max-width: 100%">
+      <p>
+        Want to reach out to the creator of this site? You can visit their
+        GitHub
+        <a class="a" href="https://github.com/johnhealycodes" target="”_blank”"
+          >here</a
+        >
+      </p>
+    </div>
     <script src="estimate.js"></script>
 </body>
 </html>
