@@ -24,7 +24,7 @@
     </div>
 
     <div class="d-flex justify-content-center container-fluid" id="tableMargins">
-        <form onsubmit="return false">
+        <form id="form" onsubmit="return false">
             <input class="mb-2" id="oldRCV" placeholder="Old Replacement Cost Value" type="number" step="0.01"><br>
 
             <input class="mb-2" id="newRCV" placeholder="New Replacement Cost Value" type="number" step="0.01"><br>
@@ -39,6 +39,7 @@
 
             <div class="d-flex justify-content-center container-fluid" id="submitSpacing">
                 <button class="btn btn-primary" type="submit" onclick="submitFunction()">Submit!</button>
+                <button class="btn btn-primary" type="submit" onclick="clearFunction()">Reset Form</button>
             </div>  
 
         </div>
@@ -51,9 +52,8 @@
     <div class="mx-auto, text-center" style="max-width: 100%">
       <p>
         Want to reach out to the creator of this site? You can visit their
-        GitHub
         <a class="a" href="https://github.com/johnhealycodes" target="”_blank”"
-          >here</a
+          > GitHub here</a
         >
       </p>
 

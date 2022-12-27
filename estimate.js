@@ -47,3 +47,10 @@ function htmlLossAdjustment() {
     <ul>Setting Loss Reserves at $${reserve}</ul>
     </div>`;
 }
+
+//clear and reset form
+
+function clearFunction() {
+  document.getElementById("form").reset();
+  return ` `;
+}
