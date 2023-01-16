@@ -1,3 +1,5 @@
+//Value assignments for calculator
+
 let oldRCV = document.getElementById("RCV").value;
 let depreciation = document.getElementById("depreciation").value;
 let nDepreciation = document.getElementById("nDepreciation").value;
